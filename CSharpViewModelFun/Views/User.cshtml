@@ -1,0 +1,9 @@
+<div class="text-center">
+    <h1 class="display-4">Here are some numbers!</h1>
+    @{
+        foreach (var user in ViewBag.Users)
+        {
+            <p>@user.fname," ", user.lname</p>
+        }
+    }
+</div>

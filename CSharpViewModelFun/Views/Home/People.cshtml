@@ -1,0 +1,11 @@
+@using ViewModelFun.Models
+@model List<Person>
+<div class="text-center">
+    <h1 class="display-4">Here are some people!</h1>
+    @{
+        foreach(var person in Model)
+        {
+            <p>@person.fname @person.lname</p>
+        }
+    }
+</div>

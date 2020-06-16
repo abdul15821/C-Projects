@@ -1,0 +1,9 @@
+<div class="text-center">
+    <h1 class="display-4">Here are some numbers!</h1>
+    @{
+        for (int i = 0; i < ViewBag.Nums.Length; i++)
+        {
+            <p>@ViewBag.Nums[i]</p>
+        }
+    }
+</div>
